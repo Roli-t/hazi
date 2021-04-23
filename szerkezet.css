@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+article, header, main, section, footer,div, nav {
+    border: 1px solid grey;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+
+main {
+    display:grid;
+    grid-template-areas:
+        "h h h h h h "
+        "n a a a as as"
+        "f f f f f f ";
+}
+
+
+header {
+    grid-area: h;
+    background:orange;
+}
+nav {
+    grid-area: n;
+    background:lightgreen;
+}
+article {
+    text-align:right;
+    display:grid;
+    grid-area: a;
+    background:lightsalmon;
+}
+aside {
+    grid-area: as;
+    background:blue;
+    
+}
+footer {
+    grid-area: f;
+    background:lightpink;
+    
+}
+.elso {
+    background:grey;
+}
+.masodik {
+    background:grey;
+}
+.prioritas{text-align:justify;}
+@media only screen and (max-width: 600px) {
+  main {
+    display:grid;
+    grid-template-areas:
+        "h h"
+        "n n"
+        "a a"
+        "as as"
+        "f f";
+  }
+}

@@ -48,7 +48,7 @@ function validalas() {
     }
     //email
     var emailbeir = ID("e-mail").value;
-    var szuro1 = /[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9]+[.]+[a-zA-Z0-9]/;
+    var szuro1 = /[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9]+[.]+[a-z0-9]/;
     console.log(emailbeir);
     if (!szuro1.test(emailbeir)) {
         hiba += "Az e-mail cím érvénytelen!<br>";

@@ -48,7 +48,7 @@ function validalas() {
     }
     //email
     var emailbeir = ID("e-mail").value;
-    var szuro1 = /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9]+[.]+[a-zA-Z0-9]/;
+    var szuro1 = /[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9]+[.]+[a-zA-Z0-9]/;
     console.log(emailbeir);
     if (!szuro1.test(emailbeir)) {
         hiba += "Az e-mail cím érvénytelen!<br>";
@@ -68,7 +68,7 @@ function validalas() {
         ID("e-mailu").style.border = "1px solid green";
     }
     var webbeir = ID("web").value;
-    var szuro3 = /[http:]+[//]+[a-zA-Z]+[.]+[a-zA-Z]/;
+    var szuro3 = /^[http:]+[//]+[a-z]+[.]+[a-z]/;
     if (!szuro3.test(webbeir)) {
         hiba += "A weboldal érvénytelen!" + "<br>";
         ID("web").style.border = "1px solid red";
